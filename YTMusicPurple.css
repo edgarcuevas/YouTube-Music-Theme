@@ -1,0 +1,53 @@
+html, body, ytmusic-detail-header-renderer {
+    background-color: #1A1528 !important;
+}
+
+ytmusic-nav-bar {
+    background: #1A1528 !important;
+}
+
+ytmusic-player-bar {
+    background: #002500 !important;
+}
+
+ytmusic-player-page {
+    background-color: #1A1528 !important;
+}
+ytmusic-item-section-tabbed-header-renderer {
+    background-color: #1A1528 !important;
+}
+ytmusic-data-bound-header-renderer {
+ background-color: #1A1528 !important;
+}
+ 
+.ytmusic-item-section-renderer {
+    background-color: #1A1528 !important;
+}
+ 
+/* Progress Bar + Volume */
+#progress-bar.ytmusic-player-bar {
+    --paper-slider-active-color     : #9DD9D2 !important;
+}
+
+#progress-bar.ytmusic-player-bar[focused],
+ytmusic-player-bar:hover #progress-bar.ytmusic-player-bar,
+.volume-slider.ytmusic-player-bar, .expand-volume-slider.ytmusic-player-bar {
+    --paper-slider-knob-color               : #9DD9D2 !important;
+    --paper-slider-knob-start-color         : #9DD9D2 !important;
+    --paper-slider-knob-start-border-color  : #9DD9D2 !important;
+    --paper-progress-active-color           : #9DD9D2 !important;
+}
+
+/* YouTube Logo in the top left */
+.logo.ytmusic-nav-bar {
+    filter: hue-rotate(175deg) saturate(0.85);
+    transition: filter 0.2s;
+}
+
+ytmusic-app-layout[player-page-open_] .logo.ytmusic-nav-bar,
+.content-scrolled .logo.ytmusic-nav-bar {
+    filter: grayscale(0%)
+            hue-rotate(175deg)
+            contrast(1.2)
+        !important;
+}
